@@ -13,6 +13,14 @@ I have done the scraping using one spider only-
  to run the spyder use command-scrapy crawl amazonbot
  
  --APPROACH--
+ 
+ --URLGENERATION--
+ 
+ 1.I have generated urls in urlgenerator.py file
+ 2. See file for logic
+ 
+ --SCRAPING--
+ 
  1. I found out that there are 4 types of links thata are generated 
   1. the first type is 404 error
   2. the second type is a physical product page
@@ -24,7 +32,7 @@ I have done the scraping using one spider only-
     1. The asin value of physical product page ends with an X and has 0 at the fourt position o fthe asin value(index=3)
     2. the asin value of the online product page ends with an 'X' and has a number greater than 0 at the 4 th position of asin value(index=3)
  4. The difference of pages told in [1][4] was taken care of by using replace and other python logic that can be in the amazonbot.py script
- 
+ 5. 
  The json file is named -amazon.json
  
  --DATABASE---
